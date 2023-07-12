@@ -1,0 +1,271 @@
+
+/* Importación de la fuente */
+
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100;1,300;1,400;1,500&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo general  */
+
+    body {
+        height: 100vh;
+        display: grid;
+        grid-template-rows: 0.2fr 1fr 0.2fr;
+        grid-template-areas:
+        "header"
+        "main"
+        "footer";
+        font-family: PTserif, serif;
+        font-weight: 400;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+    }
+
+/* Estilo header */
+
+    header {
+        background-color: #0B090A;
+        padding: 10px 10px;
+        grid-area: header;
+        display: flex;
+    }
+
+/* Estilo navbar boostrap */
+
+    .navbar-expand-lg {
+        width: 100%;
+    }
+
+    .nav-link {
+        font-weight: 700;
+        color: #BA181B;
+    }
+
+    .navbar_logo {
+        height: 70px;
+    }
+
+    .navbar-toggler {
+        background-color: #4e5153;
+    }
+
+    .navbar-nav {
+        display: flex;
+        justify-content: space-evenly; 
+        width: 100%;
+    }
+
+
+/* Estilos del main */
+
+    main section {
+        align-items: center;
+        justify-content: center;
+    }
+
+    #grid-main-container-index {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .imagen-inicio {
+        flex: 4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .imagen-inicio img {
+        max-width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+
+    .texto-inicio {
+        flex: 6;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .info-container {
+        display: flex;
+        align-items:center;
+        justify-content:space-around;
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+
+    .cel-container a, .dir-container a, .email-container a {
+        text-decoration: none;
+        color: #0B090A;
+    }
+
+/* Estilo vehiculos carrusel boostrap */
+
+    #carouselflota {
+        width: 100%;
+        max-width: 600px;
+        height: 500px;
+        margin: 0 auto;
+      }
+
+
+/* Estilo reservas */
+
+    .form-reserva {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    h4 {
+        margin-bottom: 10px;
+        text-align: center;
+        color: #BA181B;
+      }
+
+      label {
+        margin-bottom: 3px;
+      }
+
+    .form-reserva input[type="text"], .form-reserva input[type="tel"], .form-reserva input[type="email"], .form-reserva input[type="date"], .form-reserva input[type="time"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+
+    .form-reserva input[type="radio"] {
+        margin-right: 2px;
+      }
+
+      button[type="submit"] {
+        background-color:#4e5153;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        margin-top: 2%;
+        margin-bottom: 2%;
+      }
+
+      button[type="submit"]:hover {
+        background-color:#BA181B;
+      }
+
+/* Estilo contacto */
+
+    .form-contacto {
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 5px;
+    }
+
+    .form-contacto input {
+      width: 30%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      height: 30px;
+    }
+    .form-contacto textarea {
+        width: 30%;
+        height: 100px;
+    }
+
+    .form-contacto p {
+        color: #BA181B;
+        text-align:justify;
+        font-family: Roboto;
+        font-style: oblique; 
+    }
+
+
+/* Estilos del footer */
+
+    footer {
+        background-color:#161A1D;
+        grid-area: footer;
+    }
+
+    #redessociales img {
+        height: 30px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+    .whatsapp-float {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+    }
+
+    footer article {
+        font-style:unset;
+        color:#FFFFFF;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #derechos {
+        text-align: center;
+        color:rgba(255, 255, 255, 0.822);
+    }
+
+/*Estilo Titulos y Parrafos */
+
+    h1, main h2 {
+        color: #BA181B;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+
+    article p {
+        margin-bottom: 15px;
+        text-align:justify;
+      }
+
+
+/* Ajustes media query */
+
+    @media (max-width: 992px) {
+
+        #grid-main-container-index {
+        display: flex;
+        flex-direction: column;
+        }
+
+        .map-container {
+        width: 50%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .info-container {
+        display: flex;
+        flex-direction: column;
+        }
+
+        .cel-container, .dir-container, .email-container {
+            margin-top: 2%;
+            margin-bottom: 2%;
+        }
+    }
+
