@@ -116,6 +116,11 @@
         margin: 0 auto;
       }
 
+    .carousel-item p {
+        text-align: center;
+        color: #BA181B;
+      }
+
 
 /* Estilo reservas */
 
