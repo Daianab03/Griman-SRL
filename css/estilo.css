@@ -267,24 +267,47 @@
     @media (max-width: 992px) {
 
         #grid-main-container-index {
-        display: flex;
-        flex-direction: column;
-        }
-
-        .map-container {
-        width: 50%;
+            display: flex;
+            flex-direction: column;
         }
     }
 
     @media (max-width: 768px) {
         .info-container {
-        display: flex;
-        flex-direction: column;
+            display: flex;
+            flex-direction: column;
         }
 
         .cel-container, .dir-container, .email-container {
             margin-top: 2%;
             margin-bottom: 2%;
+        }
+
+        .form-contacto, .map-container {
+            margin: 0 16px;
+        }
+
+        #carouselflota {
+            width: 100%;
+            max-width: 400px;
+            height: 600px;
+            margin: 0 auto;
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        #derechos {
+            font-size: 18px;
+        }
+    }
+
+    @media (max-width: 414px) {
+
+        .map-container iframe {
+          width: 100%;
+          height: 300px;
         }
     }
 
