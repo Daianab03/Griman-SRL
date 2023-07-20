@@ -194,17 +194,13 @@
         border-radius: 5px;
     }
 
-    .form-contacto input {
-      width: 30%;
+    .form-contacto input, .form-contacto textarea {
+      width: 100%;
       padding: 10px;
       margin-bottom: 15px;
       border: 1px solid #ccc;
       border-radius: 5px;
       height: 30px;
-    }
-    .form-contacto textarea {
-        width: 30%;
-        height: 100px;
     }
 
     .form-contacto p {
