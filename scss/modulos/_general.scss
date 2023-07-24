@@ -1,0 +1,45 @@
+// Estilo general
+
+*{
+    @include reset
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 0.2fr 1fr 0.2fr;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+    font-family: 'PTserif', serif;
+    font-weight: 400;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+
+
+/*Estilo Titulos y Parrafos */
+
+main {
+
+    h1,
+    h2 {
+        color: #BA181B;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-style: italic;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+
+    article {
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+            max-width: 992px;
+        }
+    }
+}

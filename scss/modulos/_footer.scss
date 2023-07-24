@@ -1,0 +1,29 @@
+// Estilos del footer
+
+.footer {
+    background-color: $color-negro;
+    grid-area: footer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    .footer_redes {
+        margin-top: 10px;
+        margin-bottom: 10px;
+
+        a {
+            margin: 15px;
+        }
+
+        img {
+            height: 30px;
+        }
+    }
+
+    .footer_derechos {
+        color: $color-blanco;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}

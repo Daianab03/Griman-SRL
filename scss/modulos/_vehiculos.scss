@@ -1,0 +1,39 @@
+// Main vehiculos
+
+
+.flota-container {
+
+    #carouselflota {
+        width: 100%;
+        max-width: 460px;
+        height: 660px;
+        margin: 0 auto;
+
+        .carousel-inner {
+            height: 100%;
+
+            .carousel-item p {
+                text-align: center;
+                color: $color-blanco;
+
+                .card-title {
+                    font-size: xx-large;
+                    font-style: italic;
+                    font-weight: lighter;
+                    color: $color-rojo;
+                }
+            }
+        }
+    }
+
+    .btn-primary {
+        background-color: $color-gris-oscuro;
+        color: $color-gris-claro;
+        padding: 10px 20px;
+        border: none;
+
+        &:hover {
+            background-color: $color-rojo;
+        }
+    }
+}

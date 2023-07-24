@@ -1,0 +1,10 @@
+// Estilo header
+
+header {
+    background-color:$color-negro;
+    padding: 10px 10px;
+    grid-area: header;
+    display: flex;
+    
+    @include nav-bar;
+}

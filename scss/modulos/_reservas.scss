@@ -1,0 +1,40 @@
+// Main reservas
+
+main {
+    .form-reserva {
+      max-width: 500px;
+      margin: 0 auto;
+      padding: 20px;
+      border-radius: 5px;
+  
+      h4 {
+        margin-bottom: 10px;
+        text-align: center;
+        color: $color-rojo;
+      }
+  
+      label {
+        margin-bottom: 3px;
+      }
+  
+      input[type="text"],
+      input[type="tel"],
+      input[type="email"],
+      input[type="date"],
+      input[type="time"] {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+  
+      input[type="radio"] {
+        margin-right: 2px;
+      }
+  
+      button[type="submit"] {
+        @include custom-button;
+      }
+    }
+  }

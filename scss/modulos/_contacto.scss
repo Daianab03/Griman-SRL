@@ -1,0 +1,55 @@
+// Estilo contacto
+
+main {
+
+    .form-contacto {
+        margin: 0 auto;
+        padding: 20px;
+        border-radius: 5px;
+
+        input {
+            width: 60%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            height: 30px;
+        }
+
+        textarea {
+            width: 60%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            height: 30px;
+        }
+
+        p {
+            color: $color-rojo;
+            text-align: justify;
+            font-family: Roboto;
+            font-style: oblique;
+        }
+
+        button[type="submit"] {
+            @include custom-button;
+        }
+    }
+
+    .info-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+
+    .cel-container,
+    .dir-container,
+    .email-container {
+        a {
+            text-decoration: none;
+            color: #0B090A;
+        }
+    }
+}
