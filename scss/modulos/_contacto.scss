@@ -3,25 +3,25 @@
 main {
 
     .form-contacto {
-        margin: 0 auto;
-        padding: 20px;
-        border-radius: 5px;
 
-        input {
-            width: 60%;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            height: 30px;
-        }
+        @include form;
 
-        textarea {
-            width: 60%;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            height: 30px;
+        div {
+
+            input[type="text"],
+            input[type="tel"],
+            input[type="email"] {
+
+                @include form-input;
+            }
+
+            textarea {
+                width: 100%;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                height: 100px;
+            }
         }
 
         p {
@@ -49,7 +49,7 @@ main {
     .email-container {
         a {
             text-decoration: none;
-            color: #0B090A;
+            color: $color-negro;
         }
     }
 }

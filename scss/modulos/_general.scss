@@ -1,6 +1,6 @@
 // Estilo general
 
-*{
+* {
     @include reset
 }
 
@@ -9,9 +9,9 @@ body {
     display: grid;
     grid-template-rows: 0.2fr 1fr 0.2fr;
     grid-template-areas:
-      "header"
-      "main"
-      "footer";
+        "header"
+        "main"
+        "footer";
     font-family: 'PTserif', serif;
     font-weight: 400;
     grid-column-gap: 10px;
@@ -19,14 +19,13 @@ body {
 }
 
 
-
-/*Estilo Titulos y Parrafos */
+// Estilo Titulos y Parrafos
 
 main {
 
     h1,
     h2 {
-        color: #BA181B;
+        color: $color-rojo;
         font-family: Georgia, 'Times New Roman', Times, serif;
         font-style: italic;
         display: flex;

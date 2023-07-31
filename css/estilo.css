@@ -16,7 +16,6 @@ body {
   grid-row-gap: 10px;
 }
 
-/*Estilo Titulos y Parrafos */
 main h1,
 main h2 {
   color: #BA181B;
@@ -141,7 +140,7 @@ main section.caracteristicas-destacadas .caracteristicas-container .caracteristi
 .flota-container #carouselflota {
   width: 100%;
   max-width: 460px;
-  height: 660px;
+  height: 680px;
   margin: 0 auto;
 }
 .flota-container #carouselflota .carousel-inner {
@@ -168,24 +167,26 @@ main section.caracteristicas-destacadas .caracteristicas-container .caracteristi
 }
 
 main .form-contacto {
+  max-width: 500px;
   margin: 0 auto;
   padding: 20px;
   border-radius: 5px;
 }
-main .form-contacto input {
-  width: 60%;
-  padding: 10px;
-  margin-bottom: 15px;
+main .form-contacto div input[type=text],
+main .form-contacto div input[type=tel],
+main .form-contacto div input[type=email] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  height: 30px;
+  border-radius: 4px;
 }
-main .form-contacto textarea {
-  width: 60%;
+main .form-contacto div textarea {
+  width: 100%;
   padding: 20px;
   border: 1px solid #ccc;
-  border-radius: 5px;
-  height: 30px;
+  border-radius: 4px;
+  height: 100px;
 }
 main .form-contacto p {
   color: #BA181B;
@@ -290,6 +291,11 @@ main .form-reserva button[type=submit]:hover {
   main .inicio-container {
     display: flex;
     flex-direction: column;
+    padding: 0 16px;
+  }
+  .historia-container,
+  .mision-container {
+    padding: 0 16px;
   }
 }
 @media (max-width: 768px) {
@@ -307,12 +313,6 @@ main .form-reserva button[type=submit]:hover {
   .map-container {
     margin: 0 16px;
   }
-  .flota-container #carouselflota {
-    width: 100%;
-    max-width: 430px;
-    height: 665px;
-    margin: 0 auto;
-  }
   p {
     font-size: 20px;
   }
@@ -324,6 +324,11 @@ main .form-reserva button[type=submit]:hover {
   .map-container iframe {
     width: 100%;
     height: 300px;
+  }
+  .flota-container #carouselflota {
+    width: 100%;
+    max-width: 370px;
+    height: 685px;
   }
 }
 

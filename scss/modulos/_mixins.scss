@@ -1,54 +1,70 @@
 // Mixins
 
 @mixin reset {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin nav-bar {
+
+  .navbar_logo {
+    height: 90px;
   }
-  
-  @mixin nav-bar {
-  
-    .navbar_logo {
-      height: 90px;
-    }
-  
-    .navbar-expand-lg {
-      width: 100%;
-    }
-  
-    .navbar>.container-fluid {
-      flex-direction: row-reverse;
-    }
-  
-    .navbar-toggler {
-      background-color: #4e5153;
-    }
-  
-    .navbar-nav {
-      display: flex;
-      justify-content: space-evenly;
-      width: 100%;
-    }
-  
-    .nav-link {
-      font-weight: 700;
-      font-size: large;
-      color: #BA181B;
-    }
+
+  .navbar-expand-lg {
+    width: 100%;
   }
-  
-  
-  @mixin custom-button {
-    background-color: $color-gris-oscuro;
-    color: $color-gris-claro;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-top: 2%;
-    margin-bottom: 2%;
-  
-    &:hover {
-      background-color: $color-rojo;
-    }
+
+  .navbar>.container-fluid {
+    flex-direction: row-reverse;
   }
+
+  .navbar-toggler {
+    background-color: #4e5153;
+  }
+
+  .navbar-nav {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .nav-link {
+    font-weight: 700;
+    font-size: large;
+    color: #BA181B;
+  }
+}
+
+
+@mixin custom-button {
+  background-color: $color-gris-oscuro;
+  color: $color-gris-claro;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 2%;
+  margin-bottom: 2%;
+
+  &:hover {
+    background-color: $color-rojo;
+  }
+}
+
+@mixin form-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+
+}
+
+@mixin form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+}
