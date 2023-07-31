@@ -21,7 +21,7 @@
   }
 
   .navbar-toggler {
-    background-color: #4e5153;
+    background-color: $br_navbartoggler;
   }
 
   .navbar-nav {
@@ -32,8 +32,8 @@
 
   .nav-link {
     font-weight: 700;
-    font-size: large;
-    color: #BA181B;
+    font-size:larger;
+    color: $color-rojo;
   }
 }
 
@@ -57,7 +57,7 @@
   width: 100%;
   padding: 8px;
   margin-bottom: 10px;
-  border: 1px solid #ccc;
+  border: 1px solid $color-border-input;
   border-radius: 4px;
 
 }

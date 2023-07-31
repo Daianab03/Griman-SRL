@@ -27,13 +27,7 @@
     }
 
     .btn-primary {
-        background-color: $color-gris-oscuro;
-        color: $color-gris-claro;
-        padding: 10px 20px;
-        border: none;
 
-        &:hover {
-            background-color: $color-rojo;
-        }
+        @include custom-button;
     }
 }

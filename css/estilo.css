@@ -57,7 +57,7 @@ header .navbar-nav {
 }
 header .nav-link {
   font-weight: 700;
-  font-size: large;
+  font-size: larger;
   color: #BA181B;
 }
 
@@ -161,6 +161,10 @@ main section.caracteristicas-destacadas .caracteristicas-container .caracteristi
   color: #F5F3F4;
   padding: 10px 20px;
   border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 .flota-container .btn-primary:hover {
   background-color: #BA181B;
@@ -206,6 +210,9 @@ main .form-contacto button[type=submit] {
 }
 main .form-contacto button[type=submit]:hover {
   background-color: #BA181B;
+}
+main .map-container {
+  margin: 0 5px;
 }
 main .info-container {
   display: flex;
