@@ -6,7 +6,7 @@
     #carouselflota {
         width: 100%;
         max-width: 460px;
-        height: 680px;
+        height: 715px;
         margin: 0 auto;
 
         .carousel-inner {
@@ -27,7 +27,6 @@
     }
 
     .btn-primary {
-
-        @include custom-button;
+       @include custom-button;
     }
 }

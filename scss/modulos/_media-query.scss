@@ -49,9 +49,11 @@
         height: 300px;
     }
 
-    .flota-container #carouselflota {
-        width: 100%;
-        max-width: 370px;
-        height: 685px;       
+    .flota-container {
+        #carouselflota {
+            width: 100%;
+            max-width: 370px;
+            height: 720px;
+        }
     }
 }

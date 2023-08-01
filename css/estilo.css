@@ -57,7 +57,7 @@ header .navbar-nav {
 }
 header .nav-link {
   font-weight: 700;
-  font-size: large;
+  font-size: larger;
   color: #BA181B;
 }
 
@@ -140,7 +140,7 @@ main section.caracteristicas-destacadas .caracteristicas-container .caracteristi
 .flota-container #carouselflota {
   width: 100%;
   max-width: 460px;
-  height: 680px;
+  height: 715px;
   margin: 0 auto;
 }
 .flota-container #carouselflota .carousel-inner {
@@ -332,7 +332,7 @@ main .form-reserva button[type=submit]:hover {
   .flota-container #carouselflota {
     width: 100%;
     max-width: 370px;
-    height: 685px;
+    height: 720px;
   }
 }
 
