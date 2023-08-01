@@ -211,9 +211,6 @@ main .form-contacto button[type=submit] {
 main .form-contacto button[type=submit]:hover {
   background-color: #BA181B;
 }
-main .map-container {
-  margin: 0 5px;
-}
 main .info-container {
   display: flex;
   align-items: center;
