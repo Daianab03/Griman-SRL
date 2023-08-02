@@ -276,19 +276,20 @@ main .form-reserva button[type=submit]:hover {
   text-align: center;
 }
 .footer .footer_redes {
-  margin-top: 10px;
+  margin-top: 20px;
   margin-bottom: 10px;
 }
 .footer .footer_redes a {
-  margin: 15px;
+  margin: 25px;
 }
 .footer .footer_redes img {
-  height: 30px;
+  height: 35px;
 }
 .footer .footer_derechos {
   color: #FFFFFF;
   margin-top: 10px;
   margin-bottom: 10px;
+  font-size: large;
 }
 
 @media (max-width: 992px) {
@@ -321,7 +322,7 @@ main .form-reserva button[type=submit]:hover {
     font-size: 20px;
   }
   .footer_derechos {
-    font-size: 18px;
+    font-size: x-large;
   }
 }
 @media (max-width: 414px) {

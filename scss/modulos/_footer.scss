@@ -9,15 +9,15 @@
     text-align: center;
 
     .footer_redes {
-        margin-top: 10px;
+        margin-top: 20px;
         margin-bottom: 10px;
 
         a {
-            margin: 15px;
+            margin: 25px;
         }
 
         img {
-            height: 30px;
+            height: 35px;
         }
     }
 
@@ -25,5 +25,6 @@
         color: $color-blanco;
         margin-top: 10px;
         margin-bottom: 10px;
+        font-size:large;
     }
 }
