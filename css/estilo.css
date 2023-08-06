@@ -321,7 +321,7 @@ main .form-reserva button[type=submit]:hover {
   p {
     font-size: 20px;
   }
-  .footer_derechos {
+  .footer .footer_derechos {
     font-size: x-large;
   }
 }
